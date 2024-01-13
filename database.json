@@ -1,0 +1,14 @@
+{
+    "quiz":[
+        {
+        "question1":"what animal is the biggest in the world",
+        "answer":["Panda","Dog","Sharks","Elephant"],
+        "id":"1"
+        },
+        {
+        "question2":"what is the synonym of discrepancy",
+        "answer":["Gorgeous","Huge","Difference","small"],
+        "id":"2"
+        }
+    ]
+}

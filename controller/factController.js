@@ -1,7 +1,7 @@
 const fs = require("fs");
 const bcrypt = require("bcrypt");
-const Factmodel = require("../database/schema/factModel.js");
-const factRouter = require("../router/factRouter.js");
+const Factmodel = require("../database/schema/factModel");
+const factRouter = require("../router/factRouter");
 
 const createFact = async (req, res) => {
   const body = req.body;
@@ -41,8 +41,7 @@ const deleteFact = async (req, res) => {
     if (!deletedFact) {
       return res.status(404).send({ message: "Fact not found" });
     }
-    // res.status(200).send({ message: "Fact deleted successfully" });
-    res.status(200).send(res);
+    res.status(200).send(deletedFact);
   } catch (e) {
     console.log(e);
   }

@@ -6,7 +6,7 @@ const cors =require('cors')
 
 
 const app = express();
-const port = 8080
+const port = 999
 
 app.use(express.json())
 app.use(cors());
@@ -16,7 +16,6 @@ app.use(userrouter);
 app.use(factRouter);
 
 connect()
-
 app.listen(port,()=>{
     console.log(`server is listening on ${port}`)
 })
